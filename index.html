@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+    /*  this code will not run becase it dosen't contain (window .onload)
+    and its place comes before the element*/
+    //   document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // Code Two
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // Code Three
+      document.getElementById("el").style.color = "red";
+    </script>
+    <h1  id="x">Elzero</h1>
+    <div id="elzero">object
+    </div>
+    <script>
+        document.getElementById("x").style.color ="blue";
+        document.getElementById("x").style.fontSize="80px";
+        document.getElementById("x").style.fontWeight ="bold";
+        document.getElementById("x").style.fontFamily ="arial";
+        document.getElementById("x").style.textAlign ="center";
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
